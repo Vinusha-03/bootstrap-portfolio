@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.columns-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-col-block {
+    width: 45%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position:fixed;
+    
+}
+.right-col-block {
+    width: 60%;
+    margin-left: 45%;
+    padding: 30px;
+    right: 0;
+}
+
+@media (max-width: 1024px) {
+    .left-col-block {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .right-col-block {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-col-block {
+        padding: 20px;
+    }
+    .right-col-block {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .columns-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-col-block,
+    .right-col-block {
+        width: 100%;
+        padding: 20px;
+    }
+}
+h1, h2, h3, h4, h5, h6 { 
+    margin: 0 0 15px; 
+    
+} 
+  
+h2 { 
+    font-size: 20px !important; 
+    line-height: 1.8em !important; 
+    font-weight: 700 !important; 
+    color: #1c1ee6 !important;
+} 
+ 
+h3 { 
+    font-size: 18px !important; 
+    line-height: 1.8em !important; 
+    font-weight: 500 !important; 
+    color: #2325ad;
+} 
+.section-wrapper{
+    padding: 50px;
+}
+.section-title{
+    margin-bottom: 15px;
+}
+.section-title h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #6a11cb;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.pink-bg{
+    background: #f8f7f7;
+    
+}
+.grey-bg{
+    background:#f7f2f2;
+}
+.pk-bg{
+    background:#e9e3e3;
+}
+.g-bg{
+    background: #f8f7f7;
+}
+.gp-bg{
+    background:#f7f2f2;
+}
+.p-bg{
+    background:#e9e3e3;
+}
+.header {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.header .profile-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./vin.png');
+    background: url('./vin.png') no-repeat center; 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10%;
+    text-align: center;
+}
+.header .content h1 {
+    font-size: 26px;
+    font-style: oblique;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(1, 24, 24, 0.952);
+    line-height: 1;
+    margin: 0;
+}
+.header .content p {
+    font-size: 25px;
+    color: #111111;
+    font-weight: 500;
+    font-style: italic;
+}
+.progress {
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ddd;
+    margin-bottom: 15px;
+}
+.progress-bar {
+    background: linear-gradient(to right, #248dee, #f11df8);
+    transition: width 1s ease-in-out;
+}
+.header .content .social-icon {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: circle;
+    justify-content: center;
+    
+}
+.header .content .social-icon li {
+    display: inline-block;
+    margin: 10px;    
+    justify-content: center;
+    
+}
+.header .content .social-icon li a { 
+    display: block; 
+    font-size: 15px; 
+    color: #ec2004; 
+    height: 35px; 
+    width: 35px; 
+    line-height: 35px; 
+    text-align: center; 
+    border-radius: 100%; 
+    border: 2px solid #c3b5e9; 
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+} 
+.header .content .social-icon li a:hover { 
+    /*border-color: #fff;*/
+    background: aqua; 
+    color: rgb(209, 11, 209);
+    transform: scale(1.1);
+    border-color: rgb(209, 11, 209);
+    justify-items: center;
+} 
+
+
+
+button {
+    background: linear-gradient(45deg, #f733cc, #ca96f0);
+    color: white;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #6c53c7, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
